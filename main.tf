@@ -79,7 +79,7 @@ resource "azurerm_linux_virtual_machine" "dosa-vm1" {
   disable_password_authentication = false
   admin_username                  = "hexagon"
   admin_password                  = "Hexagon@123"
-  size                            = "Standard_B1ms"
+  size                            = "Standard_B2s"
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
