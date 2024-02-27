@@ -24,15 +24,19 @@ variable "names" {
 }
 variable "subid" {
   type = string
+  sensitive = true
 }
 
 variable "tenantid" {
   type = string
+  sensitive = true
 }
 variable "clientid" {
   type = string
+  sensitive = true
 }
 
 variable "secret1" {
   type = string
+  sensitive = true
 }
