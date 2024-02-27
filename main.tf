@@ -80,10 +80,15 @@ resource "azurerm_linux_virtual_machine" "dosa-vm1" {
   admin_username                  = "hexagon"
   admin_password                  = "Hexagon@123"
   size                            = "Standard_B2s"
+  tags = {
+    "name" = "vmlinux"
+  }
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
+    
   }
+  
   source_image_reference {
     publisher = "Canonical"
     offer     = "UbuntuServer"
